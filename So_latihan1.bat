@@ -1,8 +1,6 @@
-
-
 @echo off 
 title latihan 5 perhitungan luas segitiga 
-rem===========setting variabel===========
+rem=================setting variabel=================
 echo ------------------------------------------------
 echo  INPUTAN NILAI ALAS DAN TINGGI
 echo ------------------------------------------------
@@ -21,7 +19,7 @@ if %luas% GEQ 500 (
 )
       
 cls
-rem=================output=================
+rem====================output====================
 echo ------------------------------------------------
 echo  PERHITUNGAN LUAS SEGITIGA
 echo ------------------------------------------------

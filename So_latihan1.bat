@@ -11,7 +11,7 @@ rem================seting perhitungan================
 set /a luas=alas*tinggi/2
  
 if %luas% GEQ 500 (
-    set grade=kategori besar
+   set grade=kategori besar
 ) else if %luas% GEQ 100 (
    set grade=kategori sedang
 )else(
@@ -19,7 +19,7 @@ if %luas% GEQ 500 (
 )
       
 cls
-rem====================output====================
+rem======================output======================
 echo ------------------------------------------------
 echo  PERHITUNGAN LUAS SEGITIGA
 echo ------------------------------------------------

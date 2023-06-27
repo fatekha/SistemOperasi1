@@ -9,11 +9,11 @@ echo 4. ddd
 set /p pilihan=Pilihan Menu Anda:
 
 if %pilihan% == 1 (
-geto 1
+goto 1
 )else if %pilihan% == 2 (
-geto 2 
+goto 2 
 )else if %pilihan% == 3 (
-geto 3
+goto 3
 )
 
 :1

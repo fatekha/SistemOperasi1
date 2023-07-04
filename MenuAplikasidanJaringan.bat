@@ -1,7 +1,9 @@
 @echo off
 :menu
 cls
-echo Menu Aplikasi:
+echo --------------------------------
+echo   Menu Aplikasi:
+echo --------------------------------
 echo 1. Word
 echo 2. Excel
 echo 3. PowerPoint

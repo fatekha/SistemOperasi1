@@ -105,25 +105,48 @@ if %so% GEQ 0 if %so% LEQ 60 (
 )
 
 rem ============Output=============
-echo -----------------------------------
+echo ----------------------------------- 
 echo          Kartu Hasil Studi         
-echo    Universitas Selamat Sri Batang
+echo    Universitas Selamat Sri Batang 
 echo -----------------------------------
-echo NIM             : %NIM%
-echo Nama Lengkap    : %Nama%
-echo Kelas           : %Kelas%
-echo Program studi   : %Prodi%
-echo -----------------------------------
-echo No  Nama Matkul       Nilai  Grade
-echo -----------------------------------
-echo 1.  Bahasa Indonesia  : %bhs_indo%, %grade_indo%
-echo 2.  Bahasa Inggris    : %bhs_ing%, %grade_ing%
-echo 3.  Pemrograman Dasar : %pd%, %grade_pd%
-echo 4.  Matematika        : %mtk%, %grade_mtk%
-echo 5.  Kalkulus1         : %kal1%, %grade_kal1%
-echo 6.  Sistem Operasi    : %so%, %grade_so%
-echo ------------------------------------
-echo Rata-rata           : %rata%
-echo Kategori            : %grade_rata%
-echo -----------------------------------
+echo NIM             : %NIM% 
+echo Nama Lengkap    : %Nama% 
+echo Kelas           : %Kelas% 
+echo Program studi   : %Prodi% 
+echo ----------------------------------- 
+echo No  Nama Matkul       Nilai  Grade 
+echo ----------------------------------- 
+echo 1.  Bahasa Indonesia  : %bhs_indo%, %grade_indo% 
+echo 2.  Bahasa Inggris    : %bhs_ing%, %grade_ing% 
+echo 3.  Pemrograman Dasar : %pd%, %grade_pd% 
+echo 4.  Matematika        : %mtk%, %grade_mtk% 
+echo 5.  Kalkulus1         : %kal1%, %grade_kal1% 
+echo 6.  Sistem Operasi    : %so%, %grade_so% 
+echo ------------------------------------ 
+echo Rata-rata           : %rata% 
+echo Kategori            : %grade_rata% 
+echo ----------------------------------- 
+
+rem ============Output=============
+echo ----------------------------------- >>putri.txt
+echo          Kartu Hasil Studi         >>putri.txt
+echo    Universitas Selamat Sri Batang >>putri.txt
+echo ----------------------------------->>putri.txt
+echo NIM             : %NIM% >>putri.txt
+echo Nama Lengkap    : %Nama% >>putri.txt
+echo Kelas           : %Kelas% >>putri.txt
+echo Program studi   : %Prodi% >>putri.txt
+echo ----------------------------------- >>putri.txt
+echo No  Nama Matkul       Nilai  Grade >>putri.txt
+echo ----------------------------------- >>putri.txt
+echo 1.  Bahasa Indonesia  : %bhs_indo%, %grade_indo% >>putri.txt
+echo 2.  Bahasa Inggris    : %bhs_ing%, %grade_ing% >>putri.txt
+echo 3.  Pemrograman Dasar : %pd%, %grade_pd% >>putri.txt
+echo 4.  Matematika        : %mtk%, %grade_mtk% >>putri.txt
+echo 5.  Kalkulus1         : %kal1%, %grade_kal1% >>putri.txt
+echo 6.  Sistem Operasi    : %so%, %grade_so% >>putri.txt
+echo ------------------------------------ >>putri.txt
+echo Rata-rata           : %rata% >>putri.txt
+echo Kategori            : %grade_rata% >>putri.txt
+echo ----------------------------------- >>putri.txt
 pause>nul

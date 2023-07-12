@@ -4,7 +4,7 @@ color 7
 cls
 title Login User
 echo ********************************************************************
-echo                                  LOGIN USER 
+echo                           LOGIN USER 
 echo ********************************************************************
 echo.
 echo --------------------------------------------------------------------
@@ -22,7 +22,7 @@ pause
 cls
 title Menu Utama
 echo ----------------------------------
-echo                Menu Utama
+echo            Menu Utama
 echo ----------------------------------
 echo         [1.] Akademik
 echo         [2.] Aplikasi
@@ -42,7 +42,7 @@ pause>nul
 cls
 title Menu Akademik
 echo ----------------------------------
-echo                Menu Akademik
+echo             Menu Akademik
 echo ----------------------------------
 echo         [1.] Perhitungan
 echo         [2.] KHS
@@ -61,30 +61,34 @@ pause>nul
 :Perhitungan
 cls
 title Perhitungan 
-set /p a=Masukkan Nilai a :
-set /p b=Masukkan Nilai b :
-set /p c=Masukkan Nilai c :
 
-rem Menghitung (a*b)^2+(b-c)^2/(a-c)
-
-set /a hasil=((a*b)(a*b)+(b-c)(b-c))/(a-c)
-
-echo -------------------HASIL-----------------------          
-echo Hasil (%a%%b%)2+(%b%-%c%)*2/(%a%-%c%):%hasil%
-echo -----------------------------------------------
-pause
+set /p nilai1="Masukkan Nilai a        : "
+set /p nilai2="Masukkan Nilai b        : "
+set /p hitung="Silakan pilih (*,/,-,+) :"
+set /a hasil="%nilai1% %hitung% %nilai2%"
+rem==============output==============
+echo -----------------------------------------
+echo              Perhitungan
+echo -----------------------------------------
+echo Angka1:%nilai1%
+echo Di    :%hitung%
+echo Angka2:%nilai2%
+echo -----------------------------------------
+echo Hasilnya Adalah:%hasil%
+echo -----------------------------------------
+pause 
 goto Akademik
-pause
+pause>nul
 
 :KHS
 cls
 title Kartu Hasil Studi
 
 rem =====Setting Variabel identitas=====
-set /p NIM=Masukan NIM :
+set /p NIM=Masukan NIM          :
 set /p Nama=Masukan Nama Lengkap :
-set /p Kelas=Masukan Kelas :
-set /p Prodi=Masukan Prodi :
+set /p Kelas=Masukan Kelas        :
+set /p Prodi=Masukan Prodi        :
 
 rem ====== Setting Variabel nilai ======
 echo -----------------------------------
@@ -195,12 +199,12 @@ echo Program studi   : %Prodi%
 echo ----------------------------------- 
 echo No  Nama Matkul       Nilai  Grade 
 echo ----------------------------------- 
-echo 1.  Bahasa Indonesia  : %bhs_indo%, %grade_indo% 
-echo 2.  Bahasa Inggris    : %bhs_ing%, %grade_ing% 
-echo 3.  Pemrograman Dasar : %pd%, %grade_pd% 
-echo 4.  Matematika        : %mtk%, %grade_mtk% 
-echo 5.  Kalkulus1         : %kal1%, %grade_kal1% 
-echo 6.  Sistem Operasi    : %so%, %grade_so% 
+echo 1.  Bahasa Indonesia  : %bhs_indo%    %grade_indo% 
+echo 2.  Bahasa Inggris    : %bhs_ing%    %grade_ing% 
+echo 3.  Pemrograman Dasar : %pd%    %grade_pd% 
+echo 4.  Matematika        : %mtk%    %grade_mtk% 
+echo 5.  Kalkulus1         : %kal1%    %grade_kal1% 
+echo 6.  Sistem Operasi    : %so%    %grade_so% 
 echo ------------------------------------ 
 echo Rata-rata           : %rata% 
 echo Kategori            : %grade_rata% 
@@ -218,12 +222,12 @@ echo Program studi   : %Prodi% >>putri.txt
 echo ----------------------------------- >>putri.txt
 echo No  Nama Matkul       Nilai  Grade >>putri.txt
 echo ----------------------------------- >>putri.txt
-echo 1.  Bahasa Indonesia  : %bhs_indo%, %grade_indo% >>putri.txt
-echo 2.  Bahasa Inggris    : %bhs_ing%, %grade_ing% >>putri.txt
-echo 3.  Pemrograman Dasar : %pd%, %grade_pd% >>putri.txt
-echo 4.  Matematika        : %mtk%, %grade_mtk% >>putri.txt
-echo 5.  Kalkulus1         : %kal1%, %grade_kal1% >>putri.txt
-echo 6.  Sistem Operasi    : %so%, %grade_so% >>putri.txt
+echo 1.  Bahasa Indonesia  : %bhs_indo%    %grade_indo% >>putri.txt
+echo 2.  Bahasa Inggris    : %bhs_ing%    %grade_ing% >>putri.txt
+echo 3.  Pemrograman Dasar : %pd%    %grade_pd% >>putri.txt
+echo 4.  Matematika        : %mtk%    %grade_mtk% >>putri.txt
+echo 5.  Kalkulus1         : %kal1%    %grade_kal1% >>putri.txt
+echo 6.  Sistem Operasi    : %so%    %grade_so% >>putri.txt
 echo ------------------------------------ >>putri.txt
 echo Rata-rata           : %rata% >>putri.txt
 echo Kategori            : %grade_rata% >>putri.txt
@@ -233,7 +237,7 @@ goto Akademik
 
 :Jadwal
 cls
-title jatwal Kuliah
+title Jatwal Kuliah
 Rem=======Matkul Hari Senin==========
 set se1=         
 set se2=         
@@ -297,7 +301,7 @@ set sab9=
 
 rem====================Output====================
 echo ---------------------------------------------------------------------------------------------------------------
-echo                                           Matkul Hari TI2A
+echo                                         MATKUL MAHASISWA TI2A
 echo ---------------------------------------------------------------------------------------------------------------
 echo No       Waktu    Senin     Selasa            Rabu Kamis        Jumat           Sabtu 
 echo 1.   07.00-07.50  %se1%  %la1%  %ra1%  %ka1%  %jum1%  %sab1%
@@ -317,12 +321,12 @@ goto Akademik
 cls
 title Kartu Hasil Studi
 rem =====setting data identitas=====
-set /p NIM=Masukan NIM  :
+set /p NIM=Masukan NIM          :
 set /p Nama=Masukan Nama Lengkap :
-set /p Kelas=Masukan Kelas :
-set /p Prodi=Masukan Prodi :
-set /p No_Wa=Masukkan NomerWa :
-set /p Alamat=Masukkan Alamat : 
+set /p Kelas=Masukan Kelas        :
+set /p Prodi=Masukan Prodi        :
+set /p No_Wa=Masukkan NomerWa     :
+set /p Alamat=Masukkan Alamat      :
 rem ==========output============
 echo ----------------------------------- 
 echo           Data Mahasiswa  
@@ -344,24 +348,25 @@ goto Utama
 cls
 title Menu Aplikasi
 echo ----------------------------------
-echo                Menu Aplikasi
+echo         Menu Aplikasi
 echo ----------------------------------
 echo         [1.] Pengolah Kata
 echo         [2.] Desain
 echo         [3.] Browser
 echo         [4.] Exit
 echo.
-set /p pilihlah=Pilihlah Menu Akademik:
+set /p pilihlah=Pilihlah Menu Aplikasi:
 if %pilihlah%==1 goto Pengolahan
 if %pilihlah%==2 goto Desain
 if %pilihlah%==3 goto Browser
 if %pilihlah%==4 goto Utama
 pause>nul
-title Menu Aplikasi dan Jaringan 
+
 :Pengolahan
 cls
+title Menu Pengolahan Kata
 echo ----------------------------------
-echo              Menu Pengolahan Kata:
+echo       Menu Pengolahan Kata:
 echo ----------------------------------
 echo    [1.] Word
 echo    [2.] Excel
@@ -369,7 +374,7 @@ echo    [3.] PowerPoint
 echo    [4.] Exit
 echo.
 
-set /p aplikasi=Pilih aplikasi anda: 
+set /p aplikasi=Pilih Aplikasi anda: 
 
 if %aplikasi%==1 (
     cls
@@ -400,7 +405,7 @@ pause
 cls
 title Menu Aplikasi Desain
 echo ----------------------------------
-echo          Menu Aplikasi Desain:
+echo       Menu Aplikasi Desain:
 echo ----------------------------------
 echo       [1.] Canva
 echo       [2.] Paint 3D
@@ -417,7 +422,7 @@ if %desain%==1 (
     pause
 ) else if %desain%==2 (
     cls
-    start https://www.paint3D.com
+    start https://all3dp.com/2/paint-3d-online-alternatives/
     goto desain
     pause
 ) else if %desain%==3 (
@@ -480,7 +485,7 @@ pause>nul
 title Menu Jaringan
 cls
 echo ----------------------------------
-echo                Menu Jaringan:
+echo          Menu Jaringan:
 echo ----------------------------------
 echo         [1.] Cek IP
 echo         [2.] Ping domain
@@ -490,7 +495,7 @@ echo         [5.] Diagnostic Tool
 echo         [6.] Exit
 echo.
 
-set /p jaringan=Pilih menu jaringan anda: 
+set /p jaringan=Pilih Menu Jaringan : 
 
 if %jaringan%==1 (
     ipconfig
@@ -531,7 +536,7 @@ pause
 cls
 title Setting Komputer
 echo ---------------------------------------------------------
-echo                          SETTING KOMPUTER
+echo                      SETTING KOMPUTER
 echo ---------------------------------------------------------
 echo                  [1]  Setting Keyboard 
 echo                  [2]  Setting Language
@@ -543,7 +548,7 @@ echo                  [7]  chrome
 echo                  [8]  Exit 
 echo.
 
-set /p "pilihan=Masukkan Pilihan Menu:"
+set /p "pilihan=Masukkan Pilihan Menu Setting Komputer:"
 if %pilihan%==1  goto keyboard
 if %pilihan%==2  goto Language
 if %pilihan%==3  goto Date

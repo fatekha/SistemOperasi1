@@ -541,8 +541,7 @@ echo                  [3]  Setting Date
 echo                  [4]  Add User
 echo                  [5]  Sound Control
 echo                  [6]  Open Startup
-echo                 
-echo                  [8]  Exit 
+echo                  [7]  Exit 
 echo.
 
 set /p "pilihan=Masukkan Pilihan Menu Setting Komputer:"
